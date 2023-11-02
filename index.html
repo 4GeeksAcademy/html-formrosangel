@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Payment Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-sm m-200">
+        <form>
+
+            <div class="card">
+                <div class="card-header">
+                    Payment form example
+                </div>
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="alert alert-danger fw-bold" role="alert">
+                                Some fields are missing</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label fw-bold">Card #</label>
+                                <input type="email number" placeholder="XXXXXXXXXXXXXXXX" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label fw-bold">CVC #</label>
+                                <input type="email number" placeholder="0000" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+
+
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label fw-bold">Amount</label>
+                                <input type="email number" placeholder="Amount" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label fw-bold">First Name</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label fw-bold">Last Name</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label fw-bold">City</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label fw-bold">State</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Pick a state</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label fw-bold">Postal Code</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                <label for="exampleInputPassword1" class="form-label fw-bold">We accept:</label>
+                                
+                                    
+                                    <input type="radio" class="btn-check" name="options" id="option2"
+                                        autocomplete="off">
+                                    <label class="btn btn-secondary" for="option2">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio2"><i
+                                                    class="fa-brands fa-cc-mastercard"></i></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2"><i
+                                                    class="fa-brands fa-cc-visa"></i></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2"><i
+                                                    class="fa-brands fa-cc-diners-club"></i></i></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2"><i
+                                                    class="fa-brands fa-cc-amex"></i></i></label>
+                                        </div>
+                                </div>
+                                <div class="col-8">
+                                    <label for="exampleInputPassword1" class="form-label fw-bold">Message</label>
+                                    <div class="form-floating">
+                                        
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2"></label>
+                                        <p class="text-secondary ">Add any notes here.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                                <button class="btn btn-primary" type="button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    
+</body>
+
+</html>
